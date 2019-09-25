@@ -1,3 +1,5 @@
+require "pry"
+
 class Owner
   # code goes here
   attr_reader :name, :species
@@ -60,7 +62,7 @@ class Owner
   end
   
   def sell_pets
-    
+    binding.pry
   end
   
 end
