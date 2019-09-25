@@ -25,4 +25,9 @@ class Owner
   def self.reset_all
     @@all.clear
   end
+  
+  def cats
+    Cat.all.collect do |my_cat|
+      my_cat.owner == self
+  end
 end
