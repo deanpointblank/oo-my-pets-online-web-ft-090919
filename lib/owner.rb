@@ -66,14 +66,14 @@ class Owner
   end
   
   def sell_pets
-    @pets.each do |pet|
+    self.pets.each do |pet|
       pet.mood = "nervous"
       pet.owner = nil
     end
   end
   
   def list_pets
-    @pets.each do |pet|
+    self.pets.each do |pet|
       puts password_field_tag
     end
   end
