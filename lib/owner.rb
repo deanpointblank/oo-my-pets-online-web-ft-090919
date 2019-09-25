@@ -62,6 +62,7 @@ class Owner
   end
   
   def sell_pets
+    pets = dogs.zip(cats).flatten.flatten
     binding.pry
   end
   
