@@ -13,6 +13,10 @@ class Owner
     @@all << self
   end
   
+  def pets
+    @pets = dogs.zip(cats).flatten.flatten
+  end
+  
   def say_species
     "I am a #{species}."
   end
@@ -70,8 +74,7 @@ class Owner
   end
   
   def list_pets
-    @pets = dogs.zip(cats).flatten.flatten
-    pets.each do |pet|
+    @pets.each do |pet|
       pet.mood = "nervous"
       pet.owner = nil
     end
