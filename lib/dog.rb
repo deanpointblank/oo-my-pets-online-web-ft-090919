@@ -9,7 +9,7 @@ class Dog
   def initialize(name, owner)
     @name = name
     @owner = owner
-    @mood = nervous
+    self.mood = "nervous"
   end
   
   def self.all
