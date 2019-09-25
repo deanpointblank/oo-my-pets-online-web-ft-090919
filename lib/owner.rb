@@ -3,7 +3,7 @@ require "pry"
 class Owner
   # code goes here
   attr_reader :name, :species
-  attr_accessor :dogs, :cats
+  attr_accessor :dogs, :cats, :pets
   
   @@all = []
   
@@ -62,11 +62,20 @@ class Owner
   end
   
   def sell_pets
-    pets = dogs.zip(cats).flatten.flatten
+    @pets = dogs.zip(cats).flatten.flatten
     pets.each do |pet|
       pet.mood = "nervous"
       pet.owner = nil
     end
   end
+  
+  def list_pets
+    @pets = dogs.zip(cats).flatten.flatten
+    pets.each do |pet|
+      pet.mood = "nervous"
+      pet.owner = nil
+    end
+  end
+  
   
 end
