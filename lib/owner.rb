@@ -73,9 +73,7 @@ class Owner
   end
   
   def list_pets
-    self.pets.each do |pet|
-      puts pet
-    end
+    "I have "
   end
   
   
