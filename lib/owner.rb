@@ -30,5 +30,6 @@ class Owner
   def cats
     Cat.all.select do |my_cat|
       my_cat.owner == self
+    end
   end
 end
