@@ -66,8 +66,7 @@ class Owner
   end
   
   def sell_pets
-    @pets = dogs.zip(cats).flatten.flatten
-    pets.each do |pet|
+    @pets.each do |pet|
       pet.mood = "nervous"
       pet.owner = nil
     end
@@ -75,8 +74,7 @@ class Owner
   
   def list_pets
     @pets.each do |pet|
-      pet.mood = "nervous"
-      pet.owner = nil
+      puts password_field_tag
     end
   end
   
