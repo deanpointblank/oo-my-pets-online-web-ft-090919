@@ -63,7 +63,10 @@ class Owner
   
   def sell_pets
     pets = dogs.zip(cats).flatten.flatten
-    binding.pry
+    pets.each do |pet|
+      pet.mood = "nervous"
+      pet.owner = nil
+    end
   end
   
 end
