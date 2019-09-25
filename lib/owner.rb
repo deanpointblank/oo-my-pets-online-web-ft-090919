@@ -74,7 +74,7 @@ class Owner
   
   def list_pets
     self.pets.each do |pet|
-      puts password_field_tag
+      puts pet
     end
   end
   
